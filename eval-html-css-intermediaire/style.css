@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@400;700&display=swap');
+*{
+    margin: 0;
+    font-family: 'Farro', sans-serif;
+    transition:  0.5s;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header{
+    width: 100%;
+    border: 265px;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+header-photo{
+    height: 800px;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#main{
+    height: min-content;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+main{
+    background-color: whitesmoke;
+    width: 2450px;
+    height: 2000px;
+    justify-content: space-around;
+}
+subHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+compte{
+    width: 1300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid black;
+
+}
+personne{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+    justify-content: space-between; 
+    
+}
+panier{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+    justify-content: space-around;
+    text-align: left;
+    
+}
+
+#link-menu{
+    display: none;
+}
+
+nav{
+    border-collapse: 2px solid black;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h3{
+    font-size: 30px;
+}
+bonjour{
+    border: 2px black;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav>a:hover{
+    color: lightgray;
+}
+
+
+#logo{
+    height: 30px;
+    object-fit: contain;
+    
+    
+}
+
+.article{
+    background-color: #f1f1f1;
+    width: 1000px;
+    height: 800px;
+    margin: 10px 25px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.chaqueArticle{
+    border: 2px solid gray;
+    width: 600px;
+    height: 700px;
+    background-color: white;
+    text-align: center;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.Buy{
+    
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+button{
+    background-color: black;
+    width: 300px;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+
+}
+h2{
+    color: orange;
+    font-size: 50px;
+}
+h5{
+    font-size: 30px;
+    text-decoration: line-through;
+}
+h4{
+    font-size: 30px;
+}
+p{
+    font-size: 30px;
+}
+h6{
+    font-size: 40px;
+}
+.discount{
+    border: 2px solid black;
+    width: 130px;
+    font-size: 50px;
+    color: orange;
+    background-color: grey;
+}
+
+
+
+.article:hover{
+   transform: scale(1.05);
+}
+footer{
+    background-color: rgb(74, 72, 72);
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+detail{
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding-bottom: 30px;
+
+}
+social{
+    
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+links{
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 900px;
+    height: 80px;
+    align-items: center;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.sed{
+    justify-content: space-between;
+} 
+
+droit{
+    color: white;
+}
+
+@media only screen and (max-width : 810px){
+
+    header{
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    body{
+        background: none;
+        background-color: #6c5ce7 ;
+    }
+}
+
+
+@media only screen and (max-width : 400px){
+
+    nav{
+        display: none;
+    }
+
+    #link-menu{
+        display: block;
+        color: white;
+        font-size: 30px;
+    }
+    header{
+        flex-direction: row;
+    }
+}
